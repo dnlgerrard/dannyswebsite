@@ -1,0 +1,322 @@
+body {
+	background: rgb(30, 30, 30);
+	background-image:url(redfuzz.gif)
+}
+h1 {
+	font-size: 70px;
+	margin:10px 0px 0px 0px;
+}
+.subheading {
+	font-size:30px;
+	margin:0px 0px 0px 0px
+}
+.button-list {
+	position:static;
+	width:100%;
+	height:10%;
+	<!--outline:red solid 1px;-->
+}
+.button {
+	color:gold;
+	position:relative;
+	margin:5px;
+	font-size: 20px;
+	vertical-align: top;
+	padding: 5px 10px;
+	cursor:pointer;
+	border-radius:2px;
+	box-shadow:10px 10px black;
+	background-color:#e8d84c;
+	background-image:url(static.gif);
+	border:none;
+	text-decoration:none;
+}
+.button:hover {
+	background-color: #b79d33;
+	background-image:url(water.gif)
+}
+
+.button:active {
+	background-color: #b79d33;
+	box-shadow:5px 5px black;
+	transform:translateY(5px);
+}
+.button-links {
+	color:black;
+	text-decoration:none;
+}
+.gnome-txt {
+
+	font-size:0px;
+	color:#e802b2;
+	position:fixed;
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%);
+	white-space:nowrap;
+        text-shadow: 
+	-5px -5px 0 black,
+	5px -5px 0 black,
+	-5px  5px 0 black,
+	5px  5px 0 black;
+}
+.gnome-motion {
+	animation-name:gnome;
+	animation-duration:1s;
+}
+#cookies {
+	font-family:Monospace;
+	position:fixed;
+	height:400px;
+	width:450px;
+	bottom:0px;
+	right:30px;
+	background-color:#e2e2e2;
+	border-radius:10px 10px 0px 0px;
+	filter:drop-shadow(-10px -10px 5px black);
+	animation-name:cookie;
+	animation-duration:60s;
+}
+#cookie-head {
+	font-weight:bold;
+	font-size:40px;
+	align:center;
+	margin:10px 10px 0px 10px;
+}
+#cookie-subhead {
+	font-weight:bold;
+	font-size:20px;
+	text-align:left;
+	margin:0px 20px 15px 20px;
+}
+#cookie-msg {
+	font-size:15px;
+	text-align:left;
+	margin:0px 20px 120px 20px;
+	font-size:15px;
+	font-family:Monospace;
+}
+#cookie-accept {
+	font-size:20px;
+	font-family:Monospace;
+	color:white;
+	border-radius:15px;
+	margin:0.5% 5% 0.5% 0%;
+	background-color:#1763dc;
+	padding:10px 30px;
+	border:3px solid #1763dc;
+	cursor:pointer;
+}
+#cookie-decline-box {
+	position:absolute;
+	width:155px;
+	height:60px;
+	right:11.5%;
+	transform:translate(0%,-100%);
+}
+#cookie-accept:hover {
+	background-color:#1049a4;
+	border:3px solid #1049a4;
+}
+#cookie-decline-box:hover ~ #cookie-decline{
+	transform:translate(0px, -100px);
+}
+#cookie-decline {
+	font-size:20px;
+	font-family:Monospace;
+	border-radius:15px;
+	margin:0.5% 0% 0.5% 5%;
+	background-color:#e2e2e2;
+	padding:10px 30px;
+	border:3px solid #1763dc;
+}
+#index-head {
+	color:white;
+	animation-name:indexHead;
+	animation-duration:0.05s;
+	animation-iteration-count:infinite;
+}
+#IPbox {
+	position:relative;
+	width:100%;
+	height:100px;
+	align:center;
+	<!--border:1px solid red;-->
+}
+#ip {
+	text-shadow:
+	-1px -1px 0 white,
+	1px -1px 0 white,
+	-1px  1px 0 white,
+	1px  1px 0 white;
+	width:100%;
+	text-align:center;
+	color: red;
+	white-space:nowrap;
+	font-size:10px;
+	cursor:default;
+	z-index:2;
+	animation-name:ipkf;
+	animation-duration:1s;
+	animation-iteration-count: infinite;
+}
+#payment {
+	display:none;
+	position:fixed;
+	height:200px;
+	width:550px;
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%);
+	background-color:#d6d2be;
+	border:#e8d84c solid 5px;
+	color:black;
+	z-index:5;
+	text-align:left;
+	padding:10px;
+}
+#payRequest {
+	font-size:20px;
+	font-weight:bold;
+	margin:4px;
+}
+#expDateDiv {
+	float:left;
+	width:150px;
+}
+#csvDiv {
+	float:left;
+	width:170px;
+}
+#paySubmit {
+	float:left;
+}
+#overlay {
+	z-index:4;
+	display:none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    background:black;
+    background:rgba(0,0,0,0.8);
+
+    filter:blur(4px);
+    -o-filter:blur(4px);
+    -ms-filter:blur(4px);
+    -moz-filter:blur(4px);
+    -webkit-filter:blur(4px);
+}
+#system {
+	outline:5px solid blue;
+	position:relative;
+	outline:none;
+	width:600px;
+	height:400px;
+}
+#globe {
+	position:relative;
+	width:400px;
+	z-index:2;
+}
+#king {
+	width:100px;
+	position:absolute;
+	animation-name:orbit;
+	animation-duration:3s;
+	animation-iteration-count:infinite
+}
+#gnomepic {
+	margin:2%;
+	height:300px;
+}
+#gnome-button {
+	position:relative;
+	margin:3%;
+	font-size: 20px;
+	vertical-align: top;
+	padding: 5px 10px;
+	cursor:pointer;
+	border-radius:2px;
+	box-shadow:10px 10px black;
+	background-color:#e8d84c;
+	border:none;
+	text-decoration:none;
+}
+#gnome-button:hover {background-color: #b79d33}
+
+#gnome-button:active {
+	background-color: #b79d33;
+	box-shadow:5px 5px black;
+	transform:translateY(5px);
+}
+#king-lore {
+	width:1305px;
+	background-color:#3a3a3a;
+	font-size:40px;
+	padding:10px;
+}
+.lore-side-img {
+	background-repeat: repeat-y;
+	background-image:url("celtic-knot.png");
+}
+.lore-fadeout {
+	animation-name:lore-fadeout;
+	animation-duration:120s;
+	animation-delay:60s;
+	animation-iteration-count:1;
+	animation-fill-mode:forwards;
+}
+#squint-cat {
+	pointer-events:none;
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%);
+	z-index:4;
+	position:fixed;
+	width:40%;
+	animation-name:squint;
+	animation-duration:20s;
+	animation-delay:150s;
+	opacity:0;
+	animation-fill-mode:forwards;
+}
+
+@keyframes lore-fadeout {
+	0% {opacity:1;animation-timing-function:linear;}
+	100% {opacity:0;animation-timing-function:linear;}
+}
+@keyframes squint {
+	0% {opacity:0;animation-timing-function:ease-in;}
+	100% {opacity:1;animation-timing-function:ease-in}
+}
+@keyframes indexHead {
+	0% {transform:translate(1px, 1px);animation-timing-function:linear;}
+	50% {transform:translate(-1px, -1px);animation-timing-function:linear;}	
+	100% {transform:translate(1px, 1px);animation-timing-function:linear;}
+}
+@keyframes gnome {
+	from {font-size:0px; opacity:1;}
+	to {font-size:600px; opacity:0}
+}
+
+@keyframes orbit {
+	0% {right:0px; top:0px; z-index:3; animation-timing-function:cubic-bezier(10,0.8,10,0.8);}
+	50% {right:500px; top:260px;z-index:3; animation-timing-function:cubic-bezier(10,0.8,10,0.8);}
+	55% {z-index:1}
+	100%{right:0px; top:0px;z-index:1; animation-timing-function:cubic-bezier(10,0.8,10,0.8);}
+}
+@keyframes ipkf {
+	0% {font-size:30px}
+	25% {font-size:50px}
+	50% {font-size:30px}
+	75% {font-size:50px}
+	100%{font-size:30px}
+}
+@keyframes cookie {
+	0% {bottom:-400px;animation-timing-function:cubic-bezier(0,0,0.1,1);}
+	100% {bottom:0px;animation-timing-function:cubic-bezier(0,0,0.1,1);}
+}
+

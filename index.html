@@ -1,0 +1,130 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body id="indexBody" onmouseover="HamsterDance.play()">
+<center>
+	<div id="overlay"></div>
+	<div id="cookies">
+		<div id="cookie-head">Cookies Settings</div>
+		<div id="cookie-subhead">We value your privacy.</div>
+		<div id="cookie-msg">
+			We use cookies to enhance your browsing experiance,
+			serve personalized ads or content, and analyze out
+			traffic. By clicking "Accept", you consent to our use of cookies. <a href="https://privicy-policy-template.com/">Read More</a>
+		</div>
+		<div>
+			<button id="cookie-accept" onClick="cookieOff()">Accept</button>
+			<div id="cookie-decline-box"> </div>
+			<button id="cookie-decline">Decline</button>
+		</div>
+	</div>
+<h1>
+	<img src="cameraL.gif" align="left" style="width:30%">
+	<img src="cameraR.gif" align="right" style="width:30%">
+	<div id="index-head" color ="white" hight="70px"> <u>Do not be afraid!</u>
+</h1>
+<div class="button-list">
+	<button class=button onclick="showIP()">Learn something new</button>
+	<button class=button onClick="window.location.href='king.html';"> Meet the king</button>
+	<button class=button onClick="window.location.href='gnome.html';">Report a gnome</button>
+	<button class=button onclick="payOn()">Tell me about yourself</button>
+
+</div>
+
+	<div id="IPbox">
+		<div class="IPtxt" id="ip"></div>
+	</div>	
+
+	<img src="eye.gif" style="width:700px" onmouseover="HamsterDance.play()" onClick="fbi()">
+
+<div id="payment">
+	<font id="payRequest">Please enter your payment details and submit.</font><br>	
+		<label align="left" for="ccnum">credit/debit card number:</label><br>
+		<input 
+			placeholder="xxxx xxxx xxxx xxxx"
+			autocomplete="cc-number" 
+			type="tel" 
+			inputmode="numeric" 
+			for="expDate"
+			type="number" 
+			id="ccnum" 
+			align="left" 
+			size="45">
+		<br>
+		<div id="expDateDiv">
+			<label for="expDate">Card expiration date:</label>
+		<br>
+
+			<input
+			size="6"
+			placeholder="MM/YY"
+			type="month" 
+			id="expDate"
+			autocomplete="cc-exp">
+		<br><br>
+			<button id="paySubmit" onClick="payOff()">Submit</button>
+		</div>
+		<div id="csvDiv">
+			<label for="csv">Card security number (on the back):</label><br>
+			<input 
+			type="password" 
+			id="csv" 
+			size="4"
+			placeholder="xxx">
+		</div>	
+		<img src="handshake.gif" align="right" style="width:25%;transform:translate(-30%,-25%)"><br>
+
+</div>
+<div id="video"></div>
+<script>
+	var HamsterDance = new Audio('HamsterDance.mp3')
+	window.onload = getIP;
+        async function getIP() {
+            try {
+                const response = await fetch('https://api.ipify.org?format=json');
+                const data = await response.json();
+		    document.getElementById('ip').innerText = `Your IP address is: ${data.ip}`;
+            } catch (error) {
+                console.error('Error fetching IP address:', error);
+            }
+        }
+
+	let ip1 = document.getElementById("ip");
+	hideIP()
+
+	function showIP() {
+		ip1.style["opacity"] = "1";
+		setTimeout(hideIP,1000);
+	}
+	function hideIP() {
+		ip1.style["opacity"] = "0";
+	}
+
+	function fbi() {
+		alert("BE AWARE!\n\nThe Federal Bureau of Investigation (FBI) are monitoring this connection")
+	}
+
+
+	let overlay = document.getElementById("overlay")
+	let pay = document.getElementById("payment");
+	function payOn() {
+		pay.style.display = "block";
+		overlay.style.display = "block";
+	}
+	function payOff() {
+		pay.style.display = "none";
+		overlay.style.display = "none";
+	}
+
+	let cookies = document.getElementById("cookies");
+	function cookieOff() {
+		cookies.style.display = "none";
+	}
+
+	navigator.mediaDevices.getUserMedia({video:true})
+</script>
+</center>
+</body>
+</html> 

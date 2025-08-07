@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+<body>
+<center>
+<h1>
+	<img src="gnome2.png" align="left" style="width:500px;transform:scaleX(-1)">
+	<img src="gnome1.png" align="right" style="width:500px;height:500px">
+	<font color ="white"> <u>Go home GNOME!</u>
+</h1>
+<div class="subheading">
+	Report a gnome sighting today!!! 
+</div>
+
+<div class="button-list">
+	<button class="button" onClick="history.back()">Go back</a></button>
+
+</div>
+	<img src="gnomeHD.jpg" id=gnomepic onClick="gnomed.play()">
+	
+	<div id="gnomeMsg1"class="gnome-txt"> GNOMES </div>
+	<div id="gnomeMsg2"class="gnome-txt"> ARE NOT </div>
+	<div id="gnomeMsg3"class="gnome-txt"> REAL! </div>
+	
+	<div style="font-size:30px;width:60%;">
+		If you have have whitnessed a gnome sighting in your area, then it is your civil duty to report it <b>imediately!!!</b>.<br>
+		If you wish to make a statement, click the "proceed" button below, and you will be redirected to the whitness report page.
+	</div>
+	<button id="gnome-button" onClick="gnome1()">Proceed</button>
+
+<script>
+	var gnomed = new Audio('gnomed2.mp3')
+	var vineBoom = new Audio('vine-boom2.mp3')
+
+
+	async function gnome1() {
+		var gnomeMsg1 = document.getElementById("gnomeMsg1");
+		gnomeMsg1.classList.add("gnome-motion");
+		setInterval(gnome2, 2000);
+		vineBoom.play()
+	}
+	async function gnome2(){
+		var gnomeMsg2 = document.getElementById("gnomeMsg2");
+		gnomeMsg2.classList.add("gnome-motion");
+		setInterval(gnome3, 2000);
+		vineBoom.play()
+	}
+	async function gnome3(){
+		var gnomeMsg3 = document.getElementById("gnomeMsg3");
+		gnomeMsg3.classList.add("gnome-motion");
+		setInterval(home,1000);
+		vineBoom.play()
+	}
+	async function home(){
+		history.back()
+	}
+</script>
+<script>
+</center>
+</body>
+</html>
