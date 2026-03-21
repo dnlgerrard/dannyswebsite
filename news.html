@@ -1,0 +1,101 @@
+<html>
+<style>
+.news-container{
+	font-family:"Arial", Helvetica, sans-serif;
+}
+</style>
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+<body id="newsBody" onmouseover="bnews.play()">
+
+	<div class="news-container">
+		<div class="topBar">
+			<img id="news-logo" src="news-logo.png">
+			<img id="blue-globe" src="blue-globe.gif"i>
+            
+		</div>
+		<div class="topLeft">
+			<img src="tower.gif" style="width:220px;float:right">
+		</div>
+		<div class="topRight">
+			<img src="tower.gif" style="width:220px;transform:scaleX(-1);float:left;">
+		</div>
+
+<div class="button-list header center">
+	<button class=news-button onclick="window.location.href='index.html'">Kingdom Cooper</button>
+	<!--<button class=news-button onClick="window.location.href='king.html';"> Meet the king</button>-->
+	<button class=news-button onClick="window.location.href='gnome.html';">Report a gnome</button>
+	<!--<button class=news-button onclick="payOn()">Tell me about yourself</button>-->
+	<button class=news-button onclick="window.location.href='gun.html';">Council Estate</button>
+	<!--<button class=news-button onclick="window.location.href='news.html';">NEWS</button>-->
+</div>
+
+
+		<div class="ads">
+			<img src="brick_ad.png" class="brick-ad" onClick="brick.play()" style="width:90%;float:right">
+		</div>
+        <div class="ads">
+            <img src="porn-ad.png" class="porn-ad" onClick="adAlert()" style="width:90%;float:left">
+        </div>
+        
+
+		<div class="content">
+			<div>
+            <h1>Watch Live</h1>
+			<img src="war.png" style="width:90%;cursor:pointer;border-style:solid;border-width:5px;border-color:black" class="center" onClick="window.location.href='https://www.youtube.com/watch?v=w7Qgcy4jENk'">
+			<br><br>
+            </div>
+            <h1>Top stories.</h1>
+            <div class="content-container">
+				<div class="top-story article" onClick="window.location.href='promising-man.html'">
+					<img src="dare2dream2.png" style="width:100%;height:auto;"></img>
+					<h2><u>Most Promising Man SHOT DEAD in Council Estate!</u></h2>
+				</div>
+				<div class="article" onClick="window.location.href='lip-balm-convention.html'">	
+					<img src="mic-check-border.png" style="width:100%;height:auto"></img>
+					<h2><u>Danny Was Seen Handing Out Flyers at the Lib Balm Convention?!</u></h2>
+				</div>
+
+				<div class="article" onClick="window.location.href='princess-diana.html'">	
+					<img src="diana.png" style="width:100%;height:auto;"</img>
+					<h2><u>Princess Diana Resurected from dead, MURDERED AGAIN!</u></h2>
+				</div>
+				<div class="article" onClick="window.location.href='lip-balm-explosion.html'">
+					<img src="bomb.gif" style="width:100%;height:auto;"</img>
+					<h2><u>EXPLOSION rock local lip balm factory</u></h2>
+				</div>
+				<div class="article" onClick="window.location.href='rome-falls.html'">
+					<img src="rome-gone.png" style="width:100%;height:auto;"</img>
+					<h2><u>Rome has FALLEN. Want to learn more?</u></h2>
+                </div>
+				<div class="article" onClick="window.location.href='5G.html'">
+					<img src="rat-head.png" style="width:100%;height:auto;"</img>
+					<h2><u>The truth they DON'T want you to know.</u></h2>
+                </div>
+			</div>
+		</div>
+       
+
+
+        <div class="foot">
+       <img src="share.png" style="width:50%;text-align:auto;">
+       </div> 
+	</div>
+
+<img id="warning" src="warning.png" style="width:100%">
+
+<script src="global.js"></script>
+<script>
+var bnews = new Audio('breakingNews.mp3')
+bnews.volume = 0.05
+var brick = new Audio('brick-sound2.mp3')
+
+function adAlert() {
+    alert("You should be on a list, freak!")
+}
+</script>
+
+</body>
+</html>

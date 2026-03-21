@@ -1,0 +1,76 @@
+<html>
+<style>
+</style>
+
+<head>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body id="newsBody">
+     <div class="article-container" onmouseover="bnews.play()">
+    <div class="topBar">
+    <img id="news-logo" src="news-logo.png">
+    <img id="blue-globe" src="blue-globe.gif">
+    </div>
+
+ 		<div class="topLeft">
+			<img src="explosion.gif" style="width:400px;float:right">
+		</div>
+		<div class="topRight">
+			<img src="explosion.gif" style="width:400px;transform:scaleX(-1);float:left;">
+		</div>
+
+<div class="button-list">
+	<button class=news-button onclick="window.location.href='index.html'">Kingdom Cooper</button>
+	<button class=news-button onClick="window.location.href='gnome.html';">Report a gnome</button>
+	<button class=news-button onclick="window.location.href='gun.html';">Council Estate</button>
+	<button class=news-button onclick="window.location.href='news.html';">Home Page</button>
+</div>
+    <div class="header">
+    <p> EXPLOSION ROCKS LOCAL LIP BALM FACTORY </p>
+    </div>
+
+    <div class="sub-header">
+    <u>A HORRIBLE ACCIDENT? OR A CALCULATED CATASTROPHE?.</u>
+    </div>
+    
+        <div class="adsL">
+			<img src="brick_ad.png" class="brick-ad" onClick="brick.play()" style="width:90%;float:right">
+		</div>
+        <div class="adsR">
+            <img src="porn-ad.png" class="porn-ad" onClick="adAlert()" style="width:90%;float:left">
+        </div>
+
+
+    
+    <div class="txt">
+    <img src="plutonium-nap.png" style="width:500px;float:left;padding:10px">
+
+Tragedy struck yesterday in Sheffield when an explosion ripped through the city’s beloved lip balm factory, sending shockwaves through the whole community. Emergency services rushed to the scene, where a fragrant mist reportedly hung in the air. It smelled like strawberry and a hint of disappointment.
+<br><br>
+Authorities say the cause of the blast remains unclear, but most experts agree it was most likely a machinery malfunction. One factory worker, covered head to toe in a suspiciously glossy sheen, with a shellshocked expression muttered only: “Too much balm… far too much balm.” The aftermath was surreal as entire streets were coated in a slippery residue, making it impossible to walk without gliding gracefully into oncoming trams.
+<br><br>
+Naturally, Danny Cooper was spotted at the scene, handing out ever-mysterious flyers. Onlookers remain divided about what was printed on them some theories include safety instructions, others suggest they were applications for Danny’s new “Lip Balm Explosion Survivors Club.” One local resident swore blind they were risqué photographs of Danny posing amongst the debris, strategically covering his undesirables with a singular Burt’s Bees tube.
+<br><br>
+Officials have urged the public to remain calm, assuring everyone that emergency lip balm supplies are being sourced. “This community will not be left with chapped lips,” promised Kier Starmer at a press conference.
+<br><br>
+As the dust settles, the people are left to ask the eternal question: was this truly an accident, or simply the inevitable consequence of flying too close to the moisturized sun?
+</div>
+    <div class="foot">
+    <img src="share.png" style="width:50%;text-align:auto">
+   </div>
+</div>
+<img id="warning" src="warning.png" style="width:100%">
+
+<script src="global.js"></script>
+<script>
+var bnews = new Audio('breakingNews.mp3')
+bnews.volume = 0.05
+var brick = new Audio('brick-sound2.mp3')
+
+function adAlert() {
+    alert("You should be on a list, freak!")
+}
+</script>
+</body>
+</html>

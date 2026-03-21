@@ -1,0 +1,74 @@
+<html>
+<style>
+</style>
+
+<head>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body id="newsBody" onmouseover="bnews.play()">
+     <div class="article-container">
+    <div class="topBar">
+    <img id="news-logo" src="news-logo.png">
+    <img id="blue-globe" src="blue-globe.gif">
+    </div>
+ 		<div class="topLeft">
+			<img src="danny_gif.gif" style="width:320px;float:right">
+		</div>
+		<div class="topRight">
+			<img src="danny_gif.gif" style="width:320px;transform:scaleX(-1);float:left;">
+		</div>
+<div class="button-list">
+	<button class=news-button onclick="window.location.href='index.html'">Kingdom Cooper</button>
+	<button class=news-button onClick="window.location.href='gnome.html';">Report a gnome</button>
+	<button class=news-button onclick="window.location.href='gun.html';">Council Estate</button>
+	<button class=news-button onclick="window.location.href='news.html';">Home Page</button>
+</div>
+
+    <div class="header">
+    <p> DANNY WAS SEEN HANDING OUT FLYERS AT THE LIP BALM CONVENTION?! </p>
+    </div>
+
+    <div class="sub-header">
+    <u>MIC CHECK... 1,2,3.</u>
+    </div>
+    
+    <div class="adsR">
+			<img src="brick_ad.png" class="brick-ad" onClick="brick.play()" style="width:90%;float:right">
+		</div>
+        <div class="adsL">
+            <img src="porn-ad.png" class="porn-ad" onClick="adAlert()" style="width:90%;float:left">
+        </div>
+
+
+   
+    <div class="txt">
+Local philanthropist and all-round good guy Danny Cooper was spotted in a precarious situation over the last weekend. Multiple eyewitness reports state that he was spotted at the local lip balm convention handing out flyers. What did they say?
+    <img src="handing-out-flyers.png" style="width:300px;float:right;padding:10px">
+<br><br>
+That’s where the story gets slimy. Attendees report seeing Danny making his way through the aisles with a neat stack of papers in hand. However, accounts differ from there. One witness swears they caught a glimpse of a flyer inscribed with the official logo of the convention itself: harmless promotional material that would make perfect sense at the event. Another witness insists the leaflets bore political slogans entirely unrelated to lip balm, with language that “didn’t fit the vibe of the convention at all.”
+<br><br>
+One witness even claimed that the papers contained risqué photographs of Danny himself. Whilst there is no evidence to support this more scandalous theory, its mere existence has fuelled speculation and granted the situation a life of its own in the online space.
+<br><br>
+Convention organizers, when asked for comment, declined to confirm or deny any knowledge of the flyers. Danny has remained silent too, leaving both fans and sceptics to decipher the fact from fiction.
+<br><br>
+For now, all we know is that Danny Cooper was indeed present, flyers in hand and that he distributed them freely. Whether his mission was to promote, provoke, or simply perplex remains an open question.
+</div>
+    <div class="foot">
+    <img src="share.png" style="width:50%;text-align:auto">
+   </div>
+</div>
+<img id="warning" src="warning.png" style="width:100%">
+
+<script src="global.js"></script>
+<script>
+var bnews = new Audio('breakingNews.mp3')
+bnews.volume = 0.05
+var brick = new Audio('brick-sound2.mp3')
+
+function adAlert() {
+    alert("You should be on a list, freak!")
+}
+</script>
+</body>
+</html>
