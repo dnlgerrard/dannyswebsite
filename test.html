@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "adsL content adsR";
+  grid-template-columns: 10% 80% 10%;
+  gap: 5px;
+  background-color: #2196F3;
+  padding: 5px;
+}
+.container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+}
+.container > div.header {
+  grid-area: header;
+  text-align: center;
+}
+.container > div.ads1 {
+  grid-area: adsL;
+}
+.container > div.ads2 {
+	grid-area:adsR;
+}
+.container > div.content {
+  grid-area: content;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header"><h2>My Header</h2></div>
+  <div class="adsL"><p>12345</p></div>
+  <div class="content"><h3>Lorem Ipsum</h3><p>Lorem ipsum odor amet, consectetuer adipiscing elit. Ridiculus sit nisl laoreet facilisis aliquet. Potenti dignissim litora eget montes rhoncus sapien neque urna. Cursus libero sapien integer magnis ligula lobortis quam ut.</p></div>
+  <div class="adsR"><p>ABCD</p></div>
+
+</div>
+
+</body>
+</html>
