@@ -1,0 +1,71 @@
+<html>
+<style>
+</style>
+
+<head>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body id="newsBody" onmouseover="bnews.play()">
+     <div class="article-container">
+    <div class="topBar">
+    <img id="news-logo" src="news-logo.png">
+    <img id="blue-globe" src="blue-globe.gif">
+    </div>
+		<div class="topLeft">
+			<img src="skeleton.gif" style="width:190px;float:right">
+		</div>
+		<div class="topRight">
+			<img src="skeleton.gif" style="width:190px;transform:scaleX(-1);float:left;">
+		</div>
+<div class="button-list">
+	<button class=news-button onclick="window.location.href='index.html'">Kingdom Cooper</button>
+	<button class=news-button onClick="window.location.href='gnome.html';">Report a gnome</button>
+	<button class=news-button onclick="window.location.href='gun.html';">Council Estate</button>
+	<button class=news-button onclick="window.location.href='news.html';">Home Page</button>
+</div>
+    <div class="header">
+    <p>ROME HAS FALLEN!</p>
+    </div>
+
+    <div class="sub-header">
+    <u>HOW'S GOING TO PICK IT BACK UP AGAIN?</u>
+    </div>
+    
+     <div class="adsR">
+			<img src="brick_ad.png" class="brick-ad" onClick="brick.play()" style="width:90%;float:right">
+		</div>
+        <div class="adsL">
+            <img src="porn-ad.png" class="porn-ad" onClick="adAlert()" style="width:90%;float:left">
+        </div>
+
+   
+    <div class="txt">
+    <img src="rome.png" style="width:700px;float:right;padding:10px"> 
+    In what historians are already calling “a bit of a downer,” the civilization of Rome has fallen. After centuries of aqueducts, sandals, and occasionally stabbing one another in the Senate, the Eternal City has proven itself to be somewhat less eternal than advertised.
+<br><br>
+Eyewitnesses report that the collapse was marked by widespread looting, confusion, and at least one man shouting, “Haec est causa cur res bonas habere non possumus!” Bread and circuses, once staples of civic life, have been discontinued due to a shortage of both bread and lions. When asked for comment, one local merchant shrugged and said, “Bonum cursum habuimus.”
+<br><br>
+Adding to the intrigue, Danny Cooper was allegedly spotted on the fringes of the chaos handing out flyers once again. As usual, no one can agree on what they contained. Some insist they contained evacuation routes, others swear they were recruitment pamphlets for his personal lip balm appreciation society. Also, predictably, one source insists they were risqué portraits of Danny dressed in a toga.
+<br><br>
+What is clear is that Rome’s collapse has left a cultural void (and possibly a surplus of marble busts) that future generations will puzzle over for centuries. In the meantime, scholars have agreed on at least one universal truth: Rome wasn’t built in a day, but it sure looks like it fell in one.
+    </div>
+    <div class="foot">
+    <img src="share.png" style="width:50%;text-align:auto">
+   </div>
+</div>
+
+<img id="warning" src="warning.png" style="width:100%">
+
+<script src="global.js"></script>
+<script>
+var bnews = new Audio('breakingNews.mp3')
+bnews.volume = 0.05
+var brick = new Audio('brick-sound2.mp3')
+
+function adAlert() {
+    alert("You should be on a list, freak!")
+}
+</script>
+</body>
+</html>
