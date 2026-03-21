@@ -1,0 +1,78 @@
+<html>
+<style>
+</style>
+
+<head>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body id="newsBody" onmouseover="bnews.play()">
+     <div class="article-container">
+    <div class="topBar">
+    <img id="news-logo" src="news-logo.png">
+    <img id="blue-globe" src="blue-globe.gif">
+    </div>
+ 		<div class="topLeft">
+			<img src="syringe.gif" style="width:330px;float:right">
+		</div>
+		<div class="topRight">
+			<img src="syringe.gif" style="width:330px;transform:scaleX(-1);float:left;">
+		</div>
+<div class="button-list">
+	<button class=news-button onclick="window.location.href='index.html'">Kingdom Cooper</button>
+	<button class=news-button onClick="window.location.href='gnome.html';">Report a gnome</button>
+	<button class=news-button onclick="window.location.href='gun.html';">Council Estate</button>
+	<button class=news-button onclick="window.location.href='news.html';">Home Page</button>
+</div>
+
+    <div class="header">
+    <p>THE TRUTH THEY DON'T WANT YOU TO KNOW!</p>
+    </div>
+
+    <div class="sub-header">
+    <u>VACCINES AND 5G TOWERS? NO THANKS! NOT IN OUR BRITAIN!</u>
+    </div>
+    
+    <div class="adsL">
+			<img src="brick_ad.png" class="brick-ad" onClick="brick.play()" style="width:90%;float:right">
+		</div>
+        <div class="adsR">
+            <img src="porn-ad.png" class="porn-ad" onClick="adAlert()" style="width:90%;float:left">
+        </div>
+
+
+    
+    <div class="txt">
+    <img src="5g-danny.jpg" style="width:400px;float:left;padding:10px"> 
+    We are repeatedly told that vaccines are safe, that 5G is harmless, and that the government has no interest in monitoring what brand of crisps you buy from the corner shop. Yet those of us who pay attention can see the patterns.
+Officials claim vaccines are full of things like antibodies and public health benefits, but the truth is simpler: they are loaded with microchips. Once inside your body, these connect you to the 5G network, turning every vaccinated citizen into a walking Wi-Fi hotspot. The government says this is absurd, but they don’t want you to know.
+<br><br>
+The chips, we are told, cannot possibly give you autism. Yet parents everywhere whisper otherwise, and it is far more satisfying to believe the government hands out autism deliberately, stocking society with people who can calculate square roots at superhuman speed or recite entire train timetables on command. Someone must run the railways after all.
+<br><br>
+Then there’s 5G. A technology allegedly designed to give us faster streaming speeds, but which also allows shadowy forces to beam their thoughts into your head. That buzzing you hear when you stand near a mast isn’t interference, it’s subliminal advertising, encouraging you to believe in free healthcare, vote in ways you wouldn’t otherwise and question authority.
+<br><br>
+Of course, Danny Cooper was there. Not at the design stage. Not at the planning meetings. Just… there. Danny is always there. At the lip balm convention. At the factory explosion. At the council estate tragedy. The fall of Rome. He is seen with his stack of flyers, earnestly handing them out, and nobody ever quite remembers what they said. Warnings? Lip balm vouchers? Tasteful nudes? Whatever they contain, Danny seems as confused as the rest of us and witnesses describe him shrugging a lot. Is he part of the conspiracy?
+<br><br>
+Almost certainly not. He just has the sort of face that turns up in grainy footage and makes people say, “Wasn’t he there too?” 
+<br><br>
+So, the next time someone tells you to stop worrying, that there are no chips in vaccines, that 5G is just phone signal, look around. Somewhere, in the corner, Danny will be standing: a little lost; a little sweaty. Offering you a flyer you won’t keep. And if that doesn’t prove the point, I don’t know what does.   
+</div>
+<div class="foot">
+    <img src="share.png" style="width:50%;text-align:auto">
+   </div>
+</div>
+
+<img id="warning" src="warning.png" style="width:100%">
+
+<script src="global.js"></script>
+<script>
+var bnews = new Audio('breakingNews.mp3')
+bnews.volume = 0.05
+var brick = new Audio('brick-sound2.mp3')
+
+function adAlert() {
+    alert("You should be on a list, freak!")
+}
+</script>
+</body>
+</html>
