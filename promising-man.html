@@ -1,0 +1,94 @@
+<html>
+<style>
+</style>
+
+<head>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body id="newsBody" onmouseover="bnews.play()">
+     <div class="article-container">
+    <div class="topBar">
+    <img id="news-logo" src="news-logo.png">
+    <img id="blue-globe" src="blue-globe.gif">
+    </div>
+ 		<div class="topLeft">
+			<img src="gun.gif" style="width:370px;float:right">
+		</div>
+		<div class="topRight">
+			<img src="gun.gif" style="width:370px;transform:scaleX(-1);float:left;">
+		</div>
+    
+<div class="button-list">
+	<button class=news-button onclick="window.location.href='index.html'">Kingdom Cooper</button>
+	<button class=news-button onClick="window.location.href='gnome.html';">Report a gnome</button>
+	<button class=news-button onclick="window.location.href='gun.html';">Council Estate</button>
+	<button class=news-button onclick="window.location.href='news.html';">Home Page</button>
+</div>
+    <div class="header">
+    <p> MOST PROMISING MAN SHOT DEAD AT COUNCIL ESTATE</p>
+    </div>
+
+    <div class="sub-header">
+    <u>HOW CAN WE REPLACE HIM?</u>
+    </div>
+    
+    <div class="adsR">
+			<img src="brick_ad.png" class="brick-ad" onClick="brick.play()" style="width:90%;float:right">
+		</div>
+        <div class="adsL">
+            <img src="porn-ad.png" class="porn-ad" onClick="adAlert()" style="width:90%;float:left">
+        </div>
+
+    
+    <div class="txt">
+    <img src="james-coffin.png" style="width:700px;float:right"> 
+    The community is still reeling from the devastating news that James Ball,
+    known universally as “the best man who ever lived,”
+    was shot this week at a local council estate.
+    Tributes have poured in from all corners of the globe,
+    with many asking the same question:
+    how could such a luminous beacon of human perfection meet such a cruel fate?
+    <br><br>
+     James wasn’t just a man… he was a movement.
+     This is a man who donated every spare penny he made to children’s charities,
+     who regularly spoke out against every worldly atrocity from deforestation to apartheid and who
+     famously spent his evenings personally handing soup to the homeless.
+     It has been whispered, though never disproven,
+     that he once carried an injured baby duckling two miles to safety,
+     while reciting Oscar Wilde’s poetry to calm it down.
+    <br><br>
+     Politicians, pop stars and at least one former astronaut have described James as “irreplaceable.”
+     A local resident simply put it: “If you added Mother Teresa, Gandhi, and David Attenborough together,
+     you’d still only get about half of James Ball.”
+    <br><br>
+     Amidst the grief, a familiar figure emerged: Danny Cooper.
+     Eyewitnesses claim Danny was seen lingering at the estate,
+     passing out his mysterious flyers. Some say they were heartfelt tributes to James,
+     some insisted they were discount vouchers for lip balm and, inevitably,
+     one rumour suggested they contained risqué sketches of Danny in mourning attire.
+    <br><br>
+     The truth of Danny’s involvement remains uncertain, but one thing is not:the legacy of James Ball.
+     Scholars and holy men have already begun debating whether his sainthood should be declared retroactively.
+     James Ball will forever remain in the hearts of those who believe perfection once walked among us,
+     on a council estate, no less.
+    </div>
+    
+    <div class="foot">
+    <img src="share.png" style="width:50%;text-align:auto">
+   </div>
+</div>
+<img id="warning" src="warning.png" style="width:100%">
+
+<script src="global.js"></script>
+<script>
+var bnews = new Audio('breakingNews.mp3')
+bnews.volume = 0.05
+var brick = new Audio('brick-sound2.mp3')
+
+function adAlert() {
+    alert("You should be on a list, freak!")
+}
+</script>
+</body>
+</html>
