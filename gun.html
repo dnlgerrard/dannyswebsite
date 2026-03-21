@@ -1,0 +1,135 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+	<body style="background-image:url(council.jpg);background-size:100% 205%">
+<center>
+<h1>
+	<img src="cameraL.gif" align="left" style="width:30%">
+	<img src="cameraR.gif" align="right" style="width:30%">
+	<div color="black" hight="70px"> <u>Welcome Home.</u>
+</h1>
+<div class="subheading">
+    Wait, what is he doing here? 
+</div>
+<div class="button-list">
+	<button class="button" onClick="history.back()">Go back</a></button>
+</div>
+
+<img src="james0.png" class="james" id="james0" onmouseover="scare()">
+<img src="james1.png" class="james" id="james1" onclick="shot1()" onmouseleave="calm()">
+<img src="james2.png" class="james" id="james2" onclick="shot2()">
+<img src="james3.png" class="james" id="james3" onclick="shot3()">
+<img src="james4.png" class="james" id="james4" onclick="shot4()">
+<img src="james5.png" class="james" id="james5" onclick="shot5()">
+<img src="james6.png" class="james" id="james6" onclick="shot6()">
+<img src="james7.png" class="james" id="james7" onclick="shot7()">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <div id="follow">    
+    <img id="ak47-rest" class="ak47" src="ak47.png"<img/>
+    <img id="ak47-shot" class="ak47" src="ak47-shot.png"<img/>
+    </div>
+
+<script>
+	var gunShot = new Audio('gunshot.mp3')
+	 document.getElementById("james0").style.display = "block"
+    
+     let ak47Rest = document.getElementById("ak47-rest")
+     let ak47Shot = document.getElementById("ak47-shot")
+
+	 let james0 = document.getElementById("james0")
+	 let james1 = document.getElementById("james1")
+	 let james2 = document.getElementById("james2")
+	 let james3 = document.getElementById("james3")
+	 let james4 = document.getElementById("james4")
+	 let james5 = document.getElementById("james5")
+	 let james6 = document.getElementById("james6")
+	 let james7 = document.getElementById("james7")
+	function scare() {
+	 	james1.style.display = "block";
+	}
+	function calm() {
+		james1.style.display = "none";
+	}
+
+    function shot() {
+        ak47Rest.style.display = "none";
+        ak47Shot.style.display = "block";
+    }
+
+    function rest() {
+        ak47Rest.style.display = "block";
+        ak47Shot.style.display = "none";
+    }
+
+	function shot1() {
+		james2.style.display = "block";
+		james0.style.display = "none";
+		james1.style.display = "none";
+        shot();
+        setTimeout(rest,150);
+		gunShot.load();
+		gunShot.play();
+	}
+	function shot2() {
+		james3.style.display = "block";
+		james2.style.display = "none";
+        shot();
+        setTimeout(rest,150);
+    	gunShot.load();
+		gunShot.play();
+	}
+	function shot3() {
+		james4.style.display = "block";
+		james3.style.display = "none";
+        shot();
+        setTimeout(rest,150);
+		gunShot.load();
+		gunShot.play();
+	}
+	function shot4() {
+		james5.style.display = "block";
+		james4.style.display = "none";
+        shot();
+        setTimeout(rest,150);
+		gunShot.load();
+		gunShot.play();
+	}
+	function shot5() {
+		james6.style.display = "block";
+		james5.style.display = "none";
+        shot();
+        setTimeout(rest,150);
+		gunShot.load();
+		gunShot.play();
+	}
+	function shot6() {
+		james7.style.display = "block";
+		james6.style.display = "none";
+        shot();
+        setTimeout(rest,150);
+		gunShot.load();
+		gunShot.play();
+	}
+	function shot7() {
+		james6.style.display = "block";
+		james7.style.display = "none";
+        shot();
+        setTimeout(rest,150);
+		gunShot.load();
+		gunShot.play();
+	}
+
+$(document).mousemove(function(e) {
+  $("#follow").css({
+    left: e.pageX,
+    top: e.pageY
+  });
+});
+
+</script>
+<center>
+</body>
+</html>
+
